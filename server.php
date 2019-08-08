@@ -61,7 +61,9 @@ function HandleServerSocket(&$server_socket)
     socket_write(
         $new_client, 
         "\33[100m OH NO! NOT ANOTHER TERMINAL CHAT ROOM! \33[0m" . PHP_EOL .
-        "Welcome! There are \33[44m " . (count($clients) - 1) . " \33[0m client(s) connected. Say something!" . 
+        "Welcome! There are \33[44m " . (count($clients) - 1) . " \33[0m client(s) connected. " . PHP_EOL .
+        "Say something! Type 'quit' to end chat." . 
+        PHP_EOL . 
         PHP_EOL
     );
 
