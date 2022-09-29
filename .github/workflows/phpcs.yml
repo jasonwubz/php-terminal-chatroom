@@ -21,10 +21,10 @@ jobs:
           ls ${{ github.workspace }}
       - name: Install PHP
         run: |
-          apt install php
+          sudo apt install php
       - name: Install phpcs
         run: |
-          apt install php-codesniffer
+          sudo apt install php-codesniffer
       - name: Check coding standard
         run: phpcs --standard=PSR12 .
       - run: echo "${{ job.status }}"
