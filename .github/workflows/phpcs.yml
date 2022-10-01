@@ -17,9 +17,9 @@ jobs:
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "The workflow is now ready."
       - name: Multi-line test
-        run:
-          echo "run 1"
-          echo "run 2"
+        run: |
+          echo "This is a line."
+          echo "This is a another line."
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
