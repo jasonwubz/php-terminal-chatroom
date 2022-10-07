@@ -6,6 +6,8 @@ This is an experimental project showcasing how PHP can be used as a standalone t
 
 PHP is a web-based language and the use of the language for concurrent connection handling is not efficient. Nevertheless, I want to see how far I can stretch the current features. With that said, I do not recommend you to use this for any production setting.
 
+## Disclaimer
+This is only a test project.
 ## Prerequisites
 
 You will need at least PHP 7.1.0. No web server is needed. Your PHP must be compliled with socket support.
